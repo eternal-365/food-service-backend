@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Non-Veg Lunch</title>
+    <link rel="stylesheet" href="nonveg_styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar -->
+
+    <!-- Non-Veg Lunch Section -->
+    <div class="d-flex flex-row mt-3">
+        <a href="lunch_select_section.html">
+            <div class="mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                </svg>
+            </div>
+        </a>
+        <h1 class="section-title">Lunch</h1>
+    </div>
+
+    <div class="nonveg">
+        <form id="orderForm">
+            <div class="food-container">
+                <div class="food-item st-1">
+                    <img src="https://mediavine-res.cloudinary.com/image/upload/s--_jVNTNNi--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1650488840/ukacpre01imjrtyw1hyt.jpg" alt="Chicken Fried Rice">
+                    <h2>Chicken Fried Rice</h2>
+                    <p class="price">70₹ per plate</p>
+                    <input type="number" name="Chicken Fried Rice" min="0" placeholder="Enter plates">
+                </div>
+                <div class="food-item st-2">
+                    <img src="https://i.ytimg.com/vi/MhzBUy-JOCE/maxresdefault.jpg" alt="Chicken Noodles">
+                    <h2>Chicken Noodles</h2>
+                    <p class="price">₹70 per plate</p>
+                    <input type="number" name="Chicken Noodles" min="0" placeholder="Enter plates">
+                </div>
+                <div class="food-item st-1">
+                    <img src="https://www.indianrecipeinfo.com/wp-content/uploads/2021/10/Chicken-Manchurian-Restaurant-Style.jpg" alt="Chicken Munchriya">
+                    <h2>Chicken Munchriya</h2>
+                    <p class="price">₹80 per plate</p>
+                    <input type="number" name="Chicken Munchriya" min="0" placeholder="Enter plates">
+                </div>
+                <div class="food-item st-2">
+                    <img src="https://5.imimg.com/data5/ANDROID/Default/2020/9/GB/TZ/VT/102789550/selection-108-500x500-png-500x500.png" alt="NON Veg Meals">
+                    <h2>NON Veg Meals</h2>
+                    <p class="price">₹100 per plate</p>
+                    <input type="number" name="NON Veg Meals" min="0" placeholder="Enter plates">
+                </div>
+                <div class="food-item st-1">
+                    <img src="https://i.ytimg.com/vi/gHnv3MoCC2U/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD07ho8lyUerpJvE5bPC5RVksSPvQ" alt="Egg Fried Rice">
+                    <h2>Egg Fried Rice</h2>
+                    <p class="price">₹60 per plate</p>
+                    <input type="number" name="Egg Fried Rice" min="0" placeholder="Enter plates">
+                </div>
+                <div class="food-item st-2">
+                    <img src="https://lh4.googleusercontent.com/proxy/WzxR_USeOX7nOtGlZiCz3RtO3tsk0hybALOud2vzptEV9s_VRT90WyxUcQ5Ahz3NX5gy9Y8M-vN7t4k30riO-uiXkQqBrrCeb7U0RZP0CaJ2ocpKD1DBJ7Sq9a90R74" alt="Egg Nodlees">
+                    <h2>Egg Nodlees</h2>
+                    <p class="price">₹60 per plate</p>
+                    <input type="number" name="Egg Nodlees" min="0" placeholder="Enter plates">
+                </div>
+            </div>
+    
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="bounce-button"><span>Submit Order</span></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

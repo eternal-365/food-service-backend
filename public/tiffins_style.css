@@ -1,0 +1,137 @@
+
+/* Section Title */
+.section-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Food Container */
+.food-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 15px auto;
+    width: 100%;
+}
+
+/* Food Item Card */
+.food-item {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.food-item:hover {
+    transform: scale(1.02);
+}
+
+.food-item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Food Item Name */
+.food-item h2 {
+    font-size: 20px;
+    color: #444;
+    margin: 8px 0;
+}
+
+/* Price */
+.price {
+    font-size: 16px;
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Input Box */
+.food-item input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Submit Button */
+.submit-btn {
+    display: block;
+    width: 80%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 15px auto;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Restrict Desktop View */
+@media (min-width: 481px) {
+    body {
+        display: none;
+    }
+}
+
+
+.tiffins {
+    background-image: linear-gradient(128deg, #ffda03, #ffff00, #ffffe0);
+    background-size: cover;
+    padding: 30px;
+
+}
+
+.st-1 {
+    transform: translateX(100vw);
+    /* Start off-screen to the right */
+    animation: slideIn1 1s ease-out forwards;
+}
+
+.st-2 {
+    transform: translateX(100vw);
+    /* Start off-screen to the right */
+    animation: slideIn2 1s ease-out forwards;
+}
+
+@keyframes slideIn1 {
+    from {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn2 {
+    from {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

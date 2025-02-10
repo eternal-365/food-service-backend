@@ -1,0 +1,40 @@
+/* Checkout Page Styling */
+.checkout-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.grand-total {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.qr-code {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.thank-you {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.home-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.home-btn:hover {
+    background-color: #0056b3;
+}

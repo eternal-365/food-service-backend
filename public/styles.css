@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.food-item {
+    display: inline-block;
+    margin: 20px;
+}
+
+.food-item img {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+
+
+.logo-styles {
+    height: 90px;
+    border-radius: 50px;
+}
+
+.nav-styles {
+    background-color: transparent;
+    box-shadow: 18px 12px 18px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.elements-styles {
+    padding: 20px;
+    color: #000000;
+    font-size: 24px;
+}
+
+.first-page{
+    padding: 10px;
+    background-image: url('https://w0.peakpx.com/wallpaper/565/109/HD-wallpaper-vintage-ink-food-background-material-food-background-food-background-hand-drawn-lettering.jpg');
+    background-size: cover;
+    text-align: center;
+    
+}
+
+.head-styles-1 {
+    font-size: 38px;
+    font-weight: bold;
+    font-family: Copperplate;
+    color: red;
+    text-decoration: underline;
+
+}
+
+.container-3 {
+    background-color: transparent;
+    display: flex;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.span-styles-2 {
+    background-color: transparent;
+    padding: 8px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 40px;
+    padding-left: 20px;
+    box-shadow: 12px 12px 20px -8px;
+}
+
+.head-styles-2 {
+    color: #ffa700;
+    font-family: Amita;
+    font-weight: bold;
+    border-radius: 8px;
+    border-style: solid;
+    padding: 10px;
+    box-shadow: 0px 0px 24px 5px;
+    margin-top: 20px;
+}
+
+.hr-1 {
+    border-color: #000000;
+    border-width: 4px;
+    border-radius: 20px;
+    border-style: dashed;
+}
+
+.para-1 {
+    font-size: 24px;
+    padding-top: 20px;
+    color: #000;
+    margin-bottom: 20vh;
+    font-weight: bold;
+    font-family: Monoton;
+
+}
+
+
+
+/* Checkout Button */
+.checkout-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: #e68900;
+}

@@ -1,0 +1,33 @@
+body{
+    background-color: aquamarine;
+    height: 100svh;
+    text-align: center;
+}
+
+.section-title{
+    color: whitesmoke;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.qr-code{
+    width: 100%;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.para{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.submit-button{
+    padding: 14px 25px 14px 25px;
+    border-radius: 20px;
+    border-width: 0px;
+    background-color: chartreuse;
+    color: black;
+    font-size: medium;
+}

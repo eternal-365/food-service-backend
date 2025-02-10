@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Lunch</title>
+    <link rel="stylesheet" href="veg_styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar -->
+    
+
+    <!-- Lunch Section -->
+    <div class="d-flex flex-row mt-3">
+        <a href="lunch_select_section.html">
+            <div class="mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                </svg>
+            </div>
+        </a>
+        <h1 class="section-title">Lunch</h1>
+    </div>
+
+    <div class="veg-lunch">
+        <form id="orderForm">
+            <div class="food-container">
+                <div class="food-item st-1">
+                    <img src="https://www.pavaniskitchen.com/wp-content/uploads/2021/08/schezwan-veg-fried-rice.jpg" alt="Veg Fried Rice">
+                    <h2>Veg Fried Rice</h2>
+                    <p class="price">₹60 per plate</p>
+                    <input type="number" name="Veg Fried Rice" min="0" placeholder="Enter plates">
+                </div>
+                <div class="food-item st-2">
+                    <img src="https://storage.googleapis.com/goraka-prod/Palakollu/Madina%20Fast%20food%20center/Veg%20Noodles/1591182606" alt="Veg Noodles">
+                    <h2>Veg Noodles</h2>
+                    <p class="price">₹80 per plate</p>
+                    <input type="number" name="Veg Noodles" min="0" placeholder="Enter plates">
+                </div>
+                <div class="food-item st-1">
+                    <img src="https://www.rewariyasat.com/h-upload/2022/03/05/21056-beetroot-manchurian-recipe-min.webp" alt="Veg Munchriya">
+                    <h2>Veg Munchriya</h2>
+                    <p class="price">₹120 per plate</p>
+                    <input type="number" name="Veg Munchuriya" min="0" placeholder="Enter plates">
+                </div>
+                <div class="food-item st-2">
+                    <img src="https://img.freepik.com/premium-photo/steamed-rice-lentil-dal-mix-vegetables-indian-curry-omelet-lunch-plate-bengali-lunch-dish_530563-613.jpg" alt="Veg Meals">
+                    <h2>Veg Meals</h2>
+                    <p class="price">₹50 per plate</p>
+                    <input type="number" name="Veg Meals" min="0" placeholder="Enter plates">
+                </div>
+            </div>
+    
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="bounce-button"><span>Submit Order</span></button>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>
