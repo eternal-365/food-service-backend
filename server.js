@@ -8,11 +8,12 @@ app.use(express.json());
 
 // Connect to MySQL
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root", // Change to your MySQL username
-  password: "Yahya@sql20", // Change to your MySQL password
-  database: "food_orders",
-});
+    host: "mysql.railway.internal",  // e.g., "containers-us-west-123.railway.app"
+    user: "root",
+    password: "zUgzKcpZmEESTMQrQXMcRuzsyPlCBZPL",
+    database: "railway",
+    port: 3306 // Check your MySQL provider for the correct port
+  });
 
 db.connect((err) => {
   if (err) {
