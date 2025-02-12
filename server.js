@@ -8,7 +8,7 @@ app.use(express.json());
 
 // Connect to MySQL
 const db = mysql.createConnection({
-    host: "mysql.railway.internal",  // e.g., "containers-us-west-123.railway.app"
+    host: "mysql.railway.internal.app",  // e.g., "containers-us-west-123.railway.app"
     user: "root",
     password: "zUgzKcpZmEESTMQrQXMcRuzsyPlCBZPL",
     database: "railway",
