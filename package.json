@@ -15,5 +15,13 @@
     "express": "^4.21.2",
     "mysql": "^2.18.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/food-order-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_GITHUB_USERNAME/food-order-backend/issues"
+  },
+  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/food-order-backend#readme",
   "description": ""
 }
