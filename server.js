@@ -6,34 +6,31 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Connect to MySQL
+// ✅ Connect to **LOCAL MySQL** instead of Render
 const db = mysql.createConnection({
-    host: "mysql.railway.internal.app",  // e.g., "containers-us-west-123.railway.app"
-    user: "root",
-    password: "zUgzKcpZmEESTMQrQXMcRuzsyPlCBZPL",
-    database: "railway",
-    port: 3306 // Check your MySQL provider for the correct port
-  });
+  host: "localhost",  // ✅ Back to localhost
+  user: "root",       // ✅ Your local MySQL username
+  password: "Yahya@sql20",       // ✅ Your local MySQL password (leave empty if none)
+  database: "food_orders", // ✅ Your local database name
+  port: 3306          // ✅ Standard MySQL port
+});
 
 db.connect((err) => {
   if (err) {
     console.error("MySQL Connection Error:", err);
-    throw err;
+    return;
   }
-  console.log("Connected to MySQL");
+  console.log("Connected to Local MySQL Database");
 });
 
-// API to save orders with Lucky Token ID
+// ✅ API to store orders in local MySQL
 app.post("/submit-order", (req, res) => {
   const { id, category, items } = req.body;
   if (!id || !items.length) {
     return res.status(400).send({ message: "Invalid data" });
   }
 
-  // Prepare order values
   const values = items.map((item) => [id, category, item.name, item.quantity]);
-
-  console.log("Inserting Order:", values);
 
   const sql = "INSERT INTO orders (lucky_token, category, food_item, quantity) VALUES ?";
   db.query(sql, [values], (err, result) => {
@@ -45,7 +42,7 @@ app.post("/submit-order", (req, res) => {
   });
 });
 
-// Start server
+// ✅ Start server locally
 app.listen(5000, () => {
   console.log("Server running on http://localhost:5000");
 });

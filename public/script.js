@@ -48,11 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
                             "Drinks";
 
             // Send order data to backend
-            const response = await fetch("https://food-order-backend-ghlj.onrender.com", {
+            const response = await fetch("http://localhost:5000/submit-order", {  // ✅ Back to local API
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ id: tokenNumber, category: category, items: orderItems })
             });
+            
 
             const result = await response.json();
             alert(result.message);
