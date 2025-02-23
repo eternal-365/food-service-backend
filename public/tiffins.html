@@ -30,25 +30,25 @@
     <div class="tiffins">
         <form id="orderForm">
             <div class="food-container">
-                <div class="food-item">
+                <div class="food-item st-1">
                     <img src="https://paattiskitchen.com/wp-content/uploads/2023/01/kmc_20230129_200720-1.jpg" alt="Puri">
                     <h2>Puri</h2>
                     <p class="price">₹30 per plate</p>
                     <input type="number" name="Puri" min="0" placeholder="Enter plates">
                 </div>
-                <div class="food-item">
+                <div class="food-item st-2">
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguIsikFdB4XcStxhNzjP02HQEHPKRfLXIf2g9f7T9vzyBxQRWrlzughY2zAYkU5JOTORAR9XxRfem-pBKTrtvcEjEu8-ZOIjZrjsIkgrRze_KPCQWqRAS7vXKMQBizVq1itG26OoFtJQR4/s1600/idly-idli4.jpg" alt="Idly">
                     <h2>Idly</h2>
                     <p class="price">₹25 per plate</p>
                     <input type="number" name="Idly" min="0" placeholder="Enter plates">
                 </div>
-                <div class="food-item">
+                <div class="food-item st-1">
                     <img src="https://www.awesomecuisine.com/wp-content/uploads/2009/06/Plain-Dosa.jpg" alt="Dosa">
                     <h2>Dosa</h2>
                     <p class="price">₹35 per plate</p>
                     <input type="number" name="Dosa" min="0" placeholder="Enter plates">
                 </div>
-                <div class="food-item">
+                <div class="food-item st-2">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKMjYihcneXxRwE19XwTXRzcXhYQ7KnYr9vw&s" alt="Bonda">
                     <h2>Bonda</h2>
                     <p class="price">₹20 per plate</p>
@@ -56,9 +56,12 @@
                 </div>
             </div>
 
-
+            <div class="time-picker">
+                <label for="pickup-time">Select Pickup Time:</label>
+                <input type="time" id="pickup-time" name="pickup-time" required>
+            </div>
             
-            <button type="submit" class="submit-btn">Submit Order</button>
+            <button type="submit" class="submit-btn" id="submit-order">Submit Order</button>
         </form>
     </div>
 </body>

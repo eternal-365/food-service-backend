@@ -31,37 +31,37 @@
     <div class="drinks">
         <form id="orderForm">
             <div class="food-container">
-                <div class="food-item">
+                <div class="food-item st-2">
                     <img src="https://static.toiimg.com/photo/83173328.cms" alt="Tea">
                     <h2>Tea</h2>
                     <p class="price">₹10 per cup</p>
                     <input type="number" name="Tea" min="0" placeholder="Enter cups">
                 </div>
-                <div class="food-item">
+                <div class="food-item st-1">
                     <img src="https://www.easyfoodsmith.com/wp-content/uploads/2014/06/Frothy-Coffee-1.jpg" alt="Coffee">
                     <h2>Coffee</h2>
                     <p class="price">₹12 per cup</p>
                     <input type="number" name="Coffee" min="0" placeholder="Enter cups">
                 </div>
-                <div class="food-item">
+                <div class="food-item st-2">
                     <img src="https://www.bigbasket.com/media/uploads/p/xl/401587_1-thums-up-soft-drink.jpg" alt="Thumbs Up">
                     <h2>Thumbs Up</h2>
                     <p class="price">₹20</p>
                     <input type="number" name="Thumbs Up" min="0" placeholder="Enter cups">
                 </div>
-                <div class="food-item">
+                <div class="food-item st-1">
                     <img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/ylpudaxn4wsw5c1l4d52" alt="Coca Cola">
                     <h2>Coca Cola</h2>
                     <p class="price">₹20-25</p>
                     <input type="number" name="Coca Cola" min="0" placeholder="Enter glasses">
                 </div>
-                <div class="food-item">
+                <div class="food-item st-2">
                     <img src="https://www.bigbasket.com/media/uploads/p/xl/67991_1-maaza-mango-drink.jpg" alt="Maaza">
                     <h2>Maaza</h2>
                     <p class="price">₹20</p>
                     <input type="number" name="Maaza" min="0" placeholder="Enter bottles">
                 </div>
-                <div class="food-item">
+                <div class="food-item st-1">
                     <img src="https://www.jiomart.com/images/product/original/490555200/minute-maid-pulpy-orange-juice-250-ml-product-images-o490555200-p590052497-0-202303220432.jpg?im=Resize=(420,420)" alt="Pulpy Orange">
                     <h2>Pulpy Orange</h2>
                     <p class="price">₹25</p>
@@ -69,10 +69,13 @@
                 </div>
             </div>
 
-            
+            <div class="time-picker">
+                <label for="pickup-time">Select Pickup Time:</label>
+                <input type="time" id="pickup-time" name="pickup-time" required>
+            </div>            
 
             <div class="d-flex flex-row justify-content-center">
-                <button type="submit" class="bounce-button"><span>Submit Order</span></button>
+                <button type="submit" class="bounce-button" id="submit-order"><span>Submit Order</span></button>
             </div>
         </form>
     </div>

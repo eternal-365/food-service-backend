@@ -18,45 +18,53 @@ document.addEventListener("DOMContentLoaded", () => {
         randomNumberSpan.textContent = tokenNumber;
     }
 
-    // Initialize an empty order list in localStorage if not present
-    if (!localStorage.getItem("selectedOrders")) {
-        localStorage.setItem("selectedOrders", JSON.stringify([]));
-    }
-
     // Handle order form submission
     const orderForm = document.getElementById("orderForm");
-    if (orderForm) {
-        orderForm.addEventListener("submit", async (e) => {
-            e.preventDefault();
-            const inputs = document.querySelectorAll("input[type='number']");
-            let orderItems = [];
+    // ... existing code ...
 
-            inputs.forEach(input => {
-                if (input.value > 0) {
-                    orderItems.push({ name: input.name, quantity: parseInt(input.value) });
-                }
-            });
+if (orderForm) {
+    orderForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const inputs = document.querySelectorAll("input[type='number']");
+        let orderItems = [];
 
-            if (orderItems.length === 0) {
-                alert("Please select at least one item.");
-                return;
+        inputs.forEach(input => {
+            if (input.value > 0) {
+                orderItems.push({ name: input.name, quantity: parseInt(input.value) });
             }
+        });
 
-            // Detect category (Tiffins, Lunch, Drinks)
-            const category = window.location.pathname.includes("tiffins") ? "Tiffins" :
-                            window.location.pathname.includes("lunch_select_section") ? "Lunch" :
-                            "Drinks";
+        if (orderItems.length === 0) {
+            alert("Please select at least one item.");
+            return;
+        }
 
-            // Send order data to backend
-            const response = await fetch("https://food-o-1.onrender.com/submit-order", {  // ✅ Back to local API
+        // Get pickup time
+        const pickupTime = document.getElementById("pickup-time").value;
+        if (!pickupTime) {
+            alert("Please select a pickup time.");
+            return;
+        }
+
+        // Send order data to backend
+        try {
+            const response = await fetch("http://localhost:5000/submit-order", {  
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ id: tokenNumber, category: category, items: orderItems })
+                body: JSON.stringify({ 
+                    order_items: orderItems,
+                    pickup_time: pickupTime
+                })
             });
-            
 
             const result = await response.json();
             alert(result.message);
-        });
-    }
+        } catch (error) {
+            console.error("Error submitting order:", error);
+            alert("An error occurred while placing the order.");
+        }
+    });
+}
+
+
 });
